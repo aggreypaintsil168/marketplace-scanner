@@ -1,0 +1,24 @@
+version: 1
+disable_existing_loggers: false
+formatters:
+  standard:
+    format: "%(asctime)s %(levelname)-8s %(name)s: %(message)s"
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: standard
+    level: INFO
+  file:
+    class: logging.FileHandler
+    formatter: standard
+    level: INFO
+    filename: scanner.log   # replaced by data/scanner.log in config/settings.py
+    encoding: utf-8
+root:
+  level: INFO
+  handlers: [console, file]
+loggers:
+  httpx:
+    level: WARNING
+  httpcore:
+    level: WARNING
