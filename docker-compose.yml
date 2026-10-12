@@ -1,0 +1,16 @@
+# Optional: reproducible local Postgres for contributors.
+# Not required if you already run PostgreSQL directly (set DATABASE_URL in .env).
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-scanner}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-scanner_dev}
+      POSTGRES_DB: ${POSTGRES_DB:-scanner}
+    ports:
+      - "127.0.0.1:5432:5432"   # reachable only from your own machine
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
