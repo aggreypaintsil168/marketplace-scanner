@@ -1,0 +1,58 @@
+# Nordic register seed. Every value is UNVERIFIED until a review is recorded.
+# Null fields must be filled from the site footer / company registry.
+# collection_status is left out on purpose: it defaults to 'pending',
+# so nothing here can be fetched until robots.txt and ToS are reviewed.
+marketplaces:
+  - slug: bolagsplatsen-se
+    name: Bolagsplatsen.se
+    url: https://www.bolagsplatsen.se
+    country: SE
+    languages: [sv]
+    type: general
+    status: candidate
+    status_note: Reference market per brief; verify count, owner, pricing.
+
+  - slug: yritysporssi-fi
+    name: Yrityspörssi.fi
+    url: null
+    country: FI
+    languages: [fi, sv]
+    type: general
+    status: candidate
+    status_note: Reference market per brief; verify count and owner (brief mentions Y-Pörssi Oy).
+
+  - slug: bedriftsborsen-no
+    name: Bedriftsbørsen
+    url: null
+    country: "NO"
+    languages: ["no"]
+    type: general
+    status: candidate
+    status_note: Brief says verify; confirm it exists and is active.
+
+  - slug: finn-no-business
+    name: Finn.no (business category)
+    url: null
+    country: "NO"
+    languages: ["no"]
+    type: general
+    status: candidate
+    status_note: In scope only for its business-for-sale category. Verify.
+
+  - slug: saxis-dk
+    name: Saxis
+    url: null
+    country: DK
+    languages: [da]
+    type: general
+    status: candidate
+    status_note: Brief says verify.
+
+  - slug: match-online-dk
+    name: Match-online
+    url: null
+    country: DK
+    languages: [da]
+    type: general
+    status: candidate
+    status_note: Brief says verify.
